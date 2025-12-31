@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: gcurrasazt/multi-server:v2
+          image: gcurrasazt/multi-server
           ports:
             - containerPort: 5000
           env:
