@@ -9,10 +9,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-      - "34.148.37.86"
+      - "34.148.37.86.sslip.io"
     secretName: my-zscaler-certs-tls
   rules:
-    - host: "34.148.37.86"
+    - host: "34.148.37.86.sslip.io"
     - http:
         paths:
           - path: /?(.*)
