@@ -7,13 +7,13 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
 spec:
   ingressClassName: nginx
-  tls:
-  - hosts:
-      - "34.148.37.86.sslip.io"
-    secretName: my-zscaler-certs-tls
+    #tls:
+    #- hosts:
+    #  - "34.148.37.86.sslip.io"
+    #secretName: my-zscaler-certs-tls
   rules:
-    - host: "34.148.37.86.sslip.io"
-      http:
+    #    - iost: "34.148.37.86.sslip.io"
+    - http:
         paths:
           - path: /?(.*)
             pathType: ImplementationSpecific
