@@ -27,7 +27,7 @@ jobs:
       - name: Set Project
         uses: google-github-actions/setup-gcloud@v1
         with:
-          project_id: multi-k8s-482822
+          project_id: new-k8s-483018
 
       - name: Auth
         run: |-
@@ -36,7 +36,7 @@ jobs:
       - name: Get Credentials
         uses: google-github-actions/get-gke-credentials@v1
         with:
-          cluster_name: multi-k8s-cluster-1
+          cluster_name: mycluster-1
           location: us-east1
 
       - name: Build
