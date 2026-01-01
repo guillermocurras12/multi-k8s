@@ -13,7 +13,7 @@ spec:
     secretName: my-zscaler-certs-tls
   rules:
     - host: "34.148.37.86.sslip.io"
-    - http:
+      http:
         paths:
           - path: /?(.*)
             pathType: ImplementationSpecific
